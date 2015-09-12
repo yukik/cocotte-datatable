@@ -1,0 +1,31 @@
+{
+  "name": "cocotte-datatable",
+  "description": "データテーブル",
+  "homepage": "https://github.com/yukik/cocotte-datatable",
+  "keywords": ["cocotte"],
+  "author": "Yuki Kurata <yuki.kurata@gmail.com>",
+  "dependencies": {
+    "cocotte-datasource": "*"
+  },
+  "devDependencies": {
+    "browserify": "^10.1.3",
+    "gulp": "^3.8.11",
+    "gulp-uglify": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yukik/cocotte-datatable.git"
+  },
+  "main": "lib/datatable.js",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "readmeFilename": "README.md",
+  "license": "MIT"
+}
