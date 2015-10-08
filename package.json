@@ -5,7 +5,10 @@
   "keywords": ["cocotte"],
   "author": "Yuki Kurata <yuki.kurata@gmail.com>",
   "dependencies": {
-    "cocotte-datasource": "*"
+    "cocotte-datasource": "*",
+    "cocotte-row" : "*",
+    "cocotte-sequantial": "*",
+    "cocotte-compare" : "*"
   },
   "devDependencies": {
     "browserify": "^10.1.3",
@@ -19,7 +22,7 @@
     "url": "git://github.com/yukik/cocotte-datatable.git"
   },
   "main": "lib/datatable.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "test": "node ./test/test.js"
   },
