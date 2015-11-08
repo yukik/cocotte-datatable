@@ -22,7 +22,7 @@
     "url": "git://github.com/yukik/cocotte-datatable.git"
   },
   "main": "lib/datatable.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "test": "node ./test/test.js"
   },

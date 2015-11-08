@@ -259,7 +259,7 @@ dt.currentIndex = 0;
 
 # イベント
 
-`dt.on(イベント名, コールバック関数)`でイベントを捕捉することができま
+`dt.on(イベント名, コールバック関数)`でイベントを捕捉することができます
 
 ## added ({Row} row)
 
@@ -280,6 +280,12 @@ dt.currentIndex = 0;
       + 更新によりリストから排除されたり、新たに追加になった場合はイベントは発生しません
       + 前項の場合はlistedイベントが発生します
 
+## threw ({Row} row, {String} fieldName)
+
+  + 値の更新に失敗した
+  + rowは更新に失敗した行です
+  + fieldNameは更新に失敗したフィールド名です
+
 ## listed()
 
   + リストに変更があった
@@ -294,8 +300,33 @@ dt.currentIndex = 0;
             + データテーブルに存在しない行でもリストの再取得を行います
   + リストの再取得が発生しても、リストに変更がなければイベントは発生しません
 
-## moved({Row} row)
+## moved({Row} fromRow, {Row} toRow)
 
   + 現在行が移動した
-  + rowは移動先の行です
   + リストが更新されても同じ行を参照している場合はmovedイベントは起きません
+
+## set liveList ({Boolean} liveList)
+
+  + 自動更新の設定が変更になった
+
+
+## set conndition ({Object} condition)
+
+  + 絞り込み条件が設定された
+
+## set order ({Array} order)
+
+  + 並び順が設定された
+
+## set range ({Number} from, {Number} to)
+
+  + 開始行・終了行を設定します
+
+## all ({String} eventName, {Mixed} param1, {Mixed} param2)
+
+  + すべてのイベントを捕捉することができます
+  + 引数は、第一引数にイベント名、それ以降にそのイベントの引数です
+
+
+
+

@@ -32,6 +32,7 @@ ds.add({name: 'mai', age: 19});
 
 var dt = new Datatable(ds);
 
+
 dt.on('listed', function(){
   console.log('---');
   this.forEach(function(row){
